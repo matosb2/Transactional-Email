@@ -7,33 +7,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Email Practice</title>
     <style type="text/css">
+        /* Remove space around the email design. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
 
-    /* Remove space around the email design. */
-    html,
-    body {
-    margin: 0 auto !important;
-    padding: 0 !important;
-    height: 100% !important;
-    width: 100% !important;
-    }
-    /* Stop Outlook resizing small text. */
-    * {
-    -ms-text-size-adjust: 100%;
-    }
-    /* Stop Outlook from adding extra spacing to tables. */
-    table,
-    td {
-    mso-table-lspace: 0pt !important;
-    mso-table-rspace: 0pt !important;
-    }
-    /* Use a better rendering method when resizing images in Outlook IE. */
-    img {
-    -ms-interpolation-mode: bicubic;
-    }
-    /* Prevent Windows 10 Mail from underlining links. Styles for underlined links should be inline. */
-    a {
-    text-decoration: none;
-    }
+        /* Stop Outlook resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Stop Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* Use a better rendering method when resizing images in Outlook IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Prevent Windows 10 Mail from underlining links. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        table {
+            font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        }
+
+        .wrapper {
+            width: 100%;
+            background-color: #eeedf2;
+        }
+
+        .h1 {
+            font-size: 32px;
+            color: #1e0a3c;
+            font-weight: 800;
+        }
+
         @media screen and (max-width: 400px) {}
 
         @media screen and (min-width: 401px) and (max-width: 400px) {}
@@ -43,35 +62,35 @@
 </head>
 
 <body>
-    <table> <!-- Wrapper-->
+    <table cellspacing="0" cellpadding="0" class="wrapper"> <!-- wrapper-->
         <tr>
             <td>
-                <table> <!-- Wrapper-inner-->
+                <table cellspacing="0" cellpadding="0" align="center"> <!-- wrapper-inner-->
                     <tr>
                         <td>
-                            <table>
+                            <table width="511" align="center" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <td>
-                                        <img src="images/eventbrite-logo.png" alt="eventbrite logo">
+                                    <td align="center">
+                                        <img src="images/eventbrite-logo.png" alt="eventbrite logo" width="140">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td align="center" class="h1">
                                         Brian, you're good to go
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <img src="images/cellphone.png" alt="cell phone">
+                                    <td align="center">
+                                        <img src="images/cellphone.png" alt="cell phone" width="115">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td align="center">
                                         Keep your tickets handy
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td align="center">
                                         <a href="#place">Get the app</a>
                                     </td>
                                 </tr>
@@ -88,7 +107,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="images/Distillery-fest.jpg" alt="Craft Distillery Fest">
+                                                    <img src="images/Distillery-fest.jpg" alt="Craft Distillery Fest" width="532">
                                                 </td>
                                             </tr>
                                         </table> <!-- End of Image Table-->
@@ -126,15 +145,20 @@
                                                                 <table>
                                                                     <tr>
                                                                         <td>
-                                                                            Saturday, October 26, 2019 from 7:00pm to 10:00pm (EDT)
+                                                                            Saturday, October 26, 2019 from 7:00pm to
+                                                                            10:00pm (EDT)
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            Add to <span><a href="https://www.eventbrite.com/calendar.ics?utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&eid=71383669477&utm_source=eventbrite&utm_term=googlecal&calendar=google">Google</a></span>
-                                                                            · <span><a href="https://www.eventbrite.com/calendar.ics?utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&eid=71383669477&utm_source=eventbrite&utm_term=outlook&calendar=outlook">Outlook</a></span>
-                                                                            · <span><a href="https://www.eventbrite.com/calendar.ics?utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&eid=71383669477&utm_source=eventbrite&utm_term=ical&calendar=ical">iCal</a></span>
-                                                                            · <span><a href="https://www.eventbrite.com/calendar.ics?utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&eid=71383669477&utm_source=eventbrite&utm_term=yahoocal&calendar=yahoo">Yahoo</a></span>
+                                                                            Add to <span><a
+                                                                                    href="https://www.eventbrite.com/calendar.ics?utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&eid=71383669477&utm_source=eventbrite&utm_term=googlecal&calendar=google">Google</a></span>
+                                                                            · <span><a
+                                                                                    href="https://www.eventbrite.com/calendar.ics?utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&eid=71383669477&utm_source=eventbrite&utm_term=outlook&calendar=outlook">Outlook</a></span>
+                                                                            · <span><a
+                                                                                    href="https://www.eventbrite.com/calendar.ics?utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&eid=71383669477&utm_source=eventbrite&utm_term=ical&calendar=ical">iCal</a></span>
+                                                                            · <span><a
+                                                                                    href="https://www.eventbrite.com/calendar.ics?utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&eid=71383669477&utm_source=eventbrite&utm_term=yahoocal&calendar=yahoo">Yahoo</a></span>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -170,7 +194,9 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href="http://maps.google.com/maps?q=Harborside+Atrium+153+Exchange+Place+Jersey+City+NJ+07311">(View on map)</a>
+                                                                            <a
+                                                                                href="http://maps.google.com/maps?q=Harborside+Atrium+153+Exchange+Place+Jersey+City+NJ+07311">(View
+                                                                                on map)</a>
                                                                         </td>
                                                                     </tr>
 
@@ -179,7 +205,10 @@
                                                                             <table>
                                                                                 <tr>
                                                                                     <td>
-                                                                                        <a href="https://www.eventbrite.com/e/jersey-city-craft-distillery-fest-tickets-71383669477?aff=eemailordconf&utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&utm_source=eventbrite&utm_term=viewevent">View event details</a><hr>
+                                                                                        <a
+                                                                                            href="https://www.eventbrite.com/e/jersey-city-craft-distillery-fest-tickets-71383669477?aff=eemailordconf&utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&utm_source=eventbrite&utm_term=viewevent">View
+                                                                                            event details</a>
+                                                                                        <hr>
                                                                                     </td>
                                                                                 </tr>
                                                                             </table>
@@ -206,7 +235,8 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td>
-                                                                                        <a href="#place">Contact the organizer</a>
+                                                                                        <a href="#place">Contact the
+                                                                                            organizer</a>
                                                                                     </td>
                                                                                 </tr>
                                                                             </table>
@@ -231,7 +261,8 @@
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                Order <span><a href="#place">#1110761201</a></span> - October 19, 2019
+                                                                Order <span><a href="#place">#1110761201</a></span> -
+                                                                October 19, 2019
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -247,7 +278,8 @@
                                                                         <td>
                                                                             $74.05
                                                                         </td>
-                                                                    </tr><hr>
+                                                                    </tr>
+                                                                    <hr>
                                                                     <tr>
                                                                         <td>
                                                                             $74.05
@@ -261,33 +293,46 @@
                                                                 <table>
                                                                     <tr>
                                                                         <td>
-                                                                            <span><a href="#place">View and manage</span></a> your order
+                                                                            <span><a href="#place">View and
+                                                                                    manage</span></a> your order
                                                                             online
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            Printable PDF tickets are attached to this email
+                                                                            Printable PDF tickets are attached to this
+                                                                            email
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            Paid via Paypal, <span><a href="#place">emailaddress@gmail.com</a></span> (#6F7146258G8925118)
+                                                                            Paid via Paypal, <span><a
+                                                                                    href="#place">emailaddress@gmail.com</a></span>
+                                                                            (#6F7146258G8925118)
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            Appears on your card statement as EB *Jersey City Craft
+                                                                            Appears on your card statement as EB *Jersey
+                                                                            City Craft
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <span><a href="#place">Contact the organizer</a></span> for any questions related to this purchase
+                                                                            <span><a href="#place">Contact the
+                                                                                    organizer</a></span> for any
+                                                                            questions related to this purchase
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            This order is subject to Eventbrite <span><a href="#place">Terms of Service</a></span> , <span><a href="#place">Privacy Policy</a></span> , <span><a href="#place">Cookie Policy</a></span>
+                                                                            This order is subject to Eventbrite <span><a
+                                                                                    href="#place">Terms of
+                                                                                    Service</a></span> , <span><a
+                                                                                    href="#place">Privacy
+                                                                                    Policy</a></span> , <span><a
+                                                                                    href="#place">Cookie
+                                                                                    Policy</a></span>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
@@ -306,7 +351,10 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <a href="#place"><img src="images/twitter.png" alt="Twitter"></a><a href="#place"><img src="images/facebook.png" alt="Facebook"></a><a href="#place"><img src="images/instagram.png" alt="Instagram"></a>
+                                                    <a href="#place"><img src="images/twitter.png" alt="Twitter"></a><a
+                                                        href="#place"><img src="images/facebook.png"
+                                                            alt="Facebook"></a><a href="#place"><img
+                                                            src="images/instagram.png" alt="Instagram"></a>
                                                 </td>
                                             </tr>
                                         </table> <!-- End of Footer Table-->
@@ -316,7 +364,8 @@
                             </table> <!-- End of Long Table-->
                         </td>
                     </tr>
-                </table> <!--End Wrapper Inner-->
+                </table>
+                <!--End Wrapper Inner-->
             </td>
         </tr>
     </table> <!-- End Wrapper-->
