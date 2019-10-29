@@ -7,6 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Email Practice</title>
     <style type="text/css">
+
+    /* Remove space around the email design. */
+    html,
+    body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    }
+    /* Stop Outlook resizing small text. */
+    * {
+    -ms-text-size-adjust: 100%;
+    }
+    /* Stop Outlook from adding extra spacing to tables. */
+    table,
+    td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+    }
+    /* Use a better rendering method when resizing images in Outlook IE. */
+    img {
+    -ms-interpolation-mode: bicubic;
+    }
+    /* Prevent Windows 10 Mail from underlining links. Styles for underlined links should be inline. */
+    a {
+    text-decoration: none;
+    }
         @media screen and (max-width: 400px) {}
 
         @media screen and (min-width: 401px) and (max-width: 400px) {}
@@ -16,10 +43,10 @@
 </head>
 
 <body>
-    <table class="wrapper">
+    <table> <!-- Wrapper-->
         <tr>
             <td>
-                <table class="wrapper-inner">
+                <table> <!-- Wrapper-inner-->
                     <tr>
                         <td>
                             <table>
