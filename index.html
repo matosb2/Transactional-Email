@@ -44,13 +44,17 @@
             width: 100%;
         }
 
+        p {
+            margin: 0;
+        }
+
         .wrapper {
-            width: 100%;
             background-color: #eeedf2;
         }
 
         .wrapper-inner {
-            max-width: 600px!important;
+            max-width: 600px;
+            width: 100%;
         }
 
         .h1 {
@@ -61,17 +65,11 @@
 
         .button-oj {
             color: white;
-            background-color: #f05537;
-            border-radius: 3px;
-            padding: 10px 20px;
+            display: inline-block;
         }
 
         .button-wht {
             color: #1e0a3c;
-            background-color: white;
-            border-radius: 3px;
-            padding: 8px 28px 12px 28px;
-            border: 2px #e7e6ea solid;
             display: inline-block;
         }
 
@@ -90,11 +88,11 @@
             border-radius: 4px;
         }
 
-        @media screen and (max-width: 400px) {}
+        /* @media screen and (max-width: 400px) {}
 
         @media screen and (min-width: 401px) and (max-width: 400px) {}
 
-        @media screen and (max-width: 768px) {}
+        @media screen and (max-width: 768px) {} */
     </style>
 </head>
 
@@ -148,7 +146,14 @@
                                 </tr>
                                 <tr>
                                     <td align="center">
-                                        <a href="#place" class="button-oj">Get the app</a>
+                                        <table border="0" cellspacing="0" cellpadding="0" style="max-width: 130px;">
+                                            <tr>
+                                                <td bgcolor="#f05537"
+                                                    style="padding: 10px 20px; border-radius:3px"
+                                                    align="center"><a href="#place" target="_blank" class="button-oj">Get the app</a>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
                                 <tr>
@@ -321,7 +326,13 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center">
-                                                                                        <a href="#place" class="button-wht">Follow</a>
+                                                                                        <table border="0" cellspacing="0" cellpadding="0" style="max-width: 106px;">
+                                                                                            <tr>
+                                                                                                <td style="padding: 8px 28px 12px 28px; border-radius:3px;border: 2px #e7e6ea solid;" align="center">
+                                                                                                    <a href="#place" target="_blank" class="button-wht">Follow</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -410,7 +421,7 @@
                                                                     <tr>
                                                                         <td colspan="2">
                                                                         </td>
-                                                                        <td align="right" style="color: #1e0a3c; font-weight: 600;">
+                                                                        <td align="right" style="color: #1e0a3c; font-weight: 600; font-size: 15px;">
                                                                             $74.05
                                                                         </td>
                                                                     </tr>
